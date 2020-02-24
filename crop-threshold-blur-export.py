@@ -35,5 +35,5 @@ for l in layers:
 	# Save File
 	layer_name = l.name.partition('.')[0]
 	newname = layer_name + '_shadow.png'
-	pdb.gimp_file_save(img, l, file_dir + newname, '?')
+	pdb.gimp_file_save(img, l, file_dir + '\\' + newname, '?')
 
