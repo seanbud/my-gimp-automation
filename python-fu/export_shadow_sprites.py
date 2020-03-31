@@ -1,5 +1,14 @@
 from gimpfu import *
 
+def InvertAll():
+	# Get list of layers
+	img = gimp.image_list()[0]
+	layers = list(img.layers)
+	
+	# Adjust layers and export
+	for l in layers:
+		# Invert Layer
+		pdb.gimp_invert(l)
 
 def ExportAll():
 	# Get list of layers
